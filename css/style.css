@@ -9,7 +9,7 @@
 :root {
   --primary-color: #black;
   --secondary-color: rgb(255, 150, 80);
-  --tertiary-color: yellowgreen;
+  --tertiary-color: lightgrey;
 }
 html,
 body {
