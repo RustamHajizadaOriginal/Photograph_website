@@ -16,12 +16,144 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./images/favicon.png" />
     <title>Dominika Neuzilova</title>
   </head>
 
   <body>
+    <!-- Navbar -->
+    <navbar class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="navbar__menu">
+          <ul class="navbar__menu-list">
+            <li class="navbar__menu-item">
+              <a href="index.html" class="navbar__menu-link">Home</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#photos" class="navbar__menu-link">Photos</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#preview" class="navbar__menu-link">Preview</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="pricing.html" target="_blank" class="navbar__menu-link"
+                >Price</a
+              >
+            </li>
+            <li class="navbar__menu-item">
+              <a href="contact.html" target="_blank" class="navbar__menu-link"
+                >Contact</a
+              >
+            </li>
+            <li class="navbar__menu-item">
+              <a
+                href="https://www.facebook.com/dominika.neuzilova"
+                target="_blank"
+                class="navbar__menu-link--primary"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="navbar__menu-item">
+              <a
+                href="https://www.instagram.com/dominikazvrsovic/"
+                target="_blank"
+                class="navbar__menu-link--primary"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile Menu & Hamburger Icon -->
+        <div class="navbar__mobile-menu">
+          <div class="navbar__mobile-menu-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <!-- Mobile Menu Items -->
+          <div class="navbar__mobile-menu-items">
+            <ul class="navbar__mobile-menu-list">
+              <li class="navbar__mobile-menu-item">
+                <a href="index.html" class="navbar__mobile-menu-link">Home</a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="#photos" class="navbar__mobile-menu-link">Photos</a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="#preview" class="navbar__mobile-menu-link">Preview</a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a
+                  href="pricing.html"
+                  target="_blank"
+                  class="navbar__mobile-menu-link"
+                  >Price</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a
+                  href="contact.html"
+                  target="_blank"
+                  class="navbar__mobile-menu-link"
+                  >Contact</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a
+                  href="https://www.facebook.com/dominika.neuzilova"
+                  target="_blank"
+                  class="navbar__mobile-menu-link--primary"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a
+                  href="https://www.instagram.com/dominikazvrsovic/"
+                  target="_blank"
+                  class="navbar__mobile-menu-link--primary"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </navbar>
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Your <span class="hero__title--primary">Cherished</span>
+            Memories Photographer
+          </h1>
+          <p class="hero__description">
+            Transforming your memories into timeless art by capturing life's
+            beautiful moments, one click at a time
+          </p>
+          <div class="hero__buttons">
+            <a href="tel:+420702011903" class="hero__button btn">
+              <i class="fa fa-phone"></i>
+              <span class="contact-info">+420 702 011 903</span>
+            </a>
+            <a
+              href="mailto:dominikaneuzilova1@gmail.com"
+              class="hero__button btn"
+            >
+              <i class="fa-regular fa-envelope"></i>
+              <span class="contact-info">dominikaneuzilova1@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Script_Linked -->
     <script src="./js/script.js"></script>
   </body>
 </html>
