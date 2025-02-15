@@ -7,7 +7,7 @@
 }
 
 :root {
-  --primary-color: #black;
+  --primary-color: black;
   --secondary-color: rgb(255, 150, 80);
   --tertiary-color: lightgrey;
 }
@@ -59,8 +59,8 @@ img {
   transition: background-color 0.3s ease-in-out;
 }
 .navbar.navbar--scroll {
-  background-color: rgba(38, 36, 49 0.8);
-  backdrop-filter: blur(10px);
+  background-color: yellowgreen;
+  backdrop-filter: blur(5px);
 }
 .navbar__container {
   display: flex;
