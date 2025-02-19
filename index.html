@@ -20,35 +20,31 @@
     <link rel="icon" href="./images/favicon.png" />
     <title>Dominika Neuzilova</title>
   </head>
-
   <body>
     <!-- Navbar -->
     <navbar class="navbar">
       <div class="navbar__container">
         <div class="navbar__logo">
-          <img src="./images/logo.png" alt="" />
+          <img src="./images/logo.png" alt="Dominika's logo" />
         </div>
         <div class="navbar__menu">
           <ul class="navbar__menu-list">
             <li class="navbar__menu-item">
-              <a href="index.html" class="navbar__menu-link">Úvod</a>
+              <a href="index.html" class="navbar__menu-link">ÚVOD</a>
             </li>
             <li class="navbar__menu-item">
-              <a href="photos.html" target="_blank" class="navbar__menu-link"
-                >Photos</a
+              <a href="#portfolio__header" class="navbar__menu-link"
+                >PORTFOLIO</a
               >
             </li>
             <li class="navbar__menu-item">
-              <a href="#služby" class="navbar__menu-link">Služby</a>
-            </li>
-            <li class="navbar__menu-item">
               <a href="pricing.html" target="_blank" class="navbar__menu-link"
-                >Price</a
+                >SLUŽBY</a
               >
             </li>
             <li class="navbar__menu-item">
               <a href="contact.html" target="_blank" class="navbar__menu-link"
-                >Contact</a
+                >KONTAKT</a
               >
             </li>
             <li class="navbar__menu-item">
@@ -80,33 +76,25 @@
           <div class="navbar__mobile-menu-items">
             <ul class="navbar__mobile-menu-list">
               <li class="navbar__mobile-menu-item">
-                <a href="index.html" class="navbar__mobile-menu-link">Úvod</a>
+                <a href="index.html" class="navbar__mobile-menu-link">ÚVOD</a>
               </li>
               <li class="navbar__mobile-menu-item">
-                <a
-                  href="photos.html"
-                  target="_blank"
-                  class="navbar__mobile-menu-link"
-                  >Photos</a
+                <a href="#portfolio__header" class="navbar__mobile-menu-link"
+                  >PORTFOLIO</a
                 >
               </li>
               <li class="navbar__mobile-menu-item">
-                <a href="#služby" class="navbar__mobile-menu-link">Služby</a>
-              </li>
-              <li class="navbar__mobile-menu-item">
-                <a
-                  href="pricing.html"
-                  target="_blank"
-                  class="navbar__mobile-menu-link"
-                  >Price</a
+                <a href="pricing.html" class="navbar__mobile-menu-link"
+                  >SLUŽBY</a
                 >
               </li>
+
               <li class="navbar__mobile-menu-item">
                 <a
                   href="contact.html"
                   target="_blank"
                   class="navbar__mobile-menu-link"
-                  >Contact</a
+                  >KONTAKT</a
                 >
               </li>
               <li class="navbar__mobile-menu-item">
@@ -132,6 +120,51 @@
         </div>
       </div>
     </navbar>
+    <!-- Main_Foto -->
+    <div class="main__photo">
+      <img src="images/download-background.jpg" alt="background_image" />
+    </div>
+    <!-- Portfolio -->
+    <div class="portfolio__header" id="portfolio__header">
+      <section class="portfolio">
+        <h2 class="portfolio__title">Portfolio</h2>
+        <div class="portfolio__cards">
+          <!-- Card 1 -->
+          <div class="portfolio__card">
+            <h4 class="portfolio__card-title">LÁSKA</h4>
+            <img src="images/lasko/Foto-065.jpg" alt="LÁSKA" />
+            <a
+              href="lasko.html"
+              target="_blank"
+              class="portfolio__card-button btn"
+              >MORE FOTKY</a
+            >
+          </div>
+          <!-- Card 2 -->
+          <div class="portfolio__card">
+            <h4 class="portfolio__card-title">PORTRETY</h4>
+            <img src="images/article-details-small.jpg" alt="PORTRETY" />
+            <a
+              href="portrety.html"
+              target="_blank"
+              class="portfolio__card-button btn"
+              >MORE POrtrety</a
+            >
+          </div>
+          <!-- Card 3 -->
+          <div class="portfolio__card">
+            <h4 class="portfolio__card-title">Projekty</h4>
+            <img src="images/article-details-large.jpg" alt="Projekty" />
+            <a
+              href="projekty.html"
+              target="_blank"
+              class="portfolio__card-button btn"
+              >More Projekty</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- Hero -->
     <header class="hero">
       <div class="hero__container container">
