@@ -7,9 +7,9 @@
 }
 
 :root {
-  --primary-color: black;
-  --secondary-color: rgb(255, 150, 20);
-  --tertiary-color: lightblue;
+  --primary-color: rgb(27, 226, 237);
+  --secondary-color: rgba(186, 246, 228, 0.99);
+  --tertiary-color: #ffeb3b;
 }
 html,
 body {
@@ -224,7 +224,7 @@ img {
   background-color: #0056b3;
 }
 
-/* Lasko */
+/* photos */
 .photo__title {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three columns */
@@ -234,25 +234,34 @@ img {
 
 .photo__title img {
   width: 100%; /* Full width of the grid cell */
-  height: 50vh; /* 50% of the viewport height */
+  height: 100%; /* 50% of the viewport height */
   object-fit: cover; /* Ensures the image covers the area without distortion */
   border-radius: 8px; /* Optional: Add some border radius for styling */
 }
-.lasko_header {
+
+.main_header {
   margin: 15px;
   padding: 15px;
   border: 15px;
   text-align: center;
 }
 
-.lasko_header__title {
+.main_header__title {
   margin: 15px;
   padding: 15px;
   border: 15px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   position: relative;
   top: 50px; /* Adjust this value to move the title lower */
+  border-radius: 50px;
+  background: var(--primary-color);
+}
+.photo__header {
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 /* Pricing */
@@ -265,6 +274,8 @@ img {
   margin-bottom: 2rem;
   text-transform: uppercase;
   text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 25px;
 }
 .pricing__cards {
   display: flex;
@@ -274,29 +285,32 @@ img {
   gap: 2rem;
 }
 .pricing__card-box {
-  background: var(--tertiary-color);
+  background: var(--primary-color);
   padding: 2.5rem;
-  border-radius: 30px;
+  border-radius: 25px;
   margin-bottom: 2rem;
+}
+.pricing__card-box img {
+  border-radius: 15px;
 }
 .pricing__card-title {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
-/* -------- */
+
 .pricing__card-price {
   font-size: 3rem;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 700;
   margin-bottom: 1rem;
 }
 .pricing__card-list {
-  text-align: left;
+  text-align: center;
   line-height: 2.5rem;
   font-weight: 300;
 }
 .pricing__card-item i {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin-right: 0.5rem;
 }
 /* Extra */
@@ -308,19 +322,6 @@ img {
 .photo {
   background: var(--tertiary-color);
   padding: 4rem 2rem 6rem;
-}
-.photo__title {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns */
-  gap: 20px; /* Adjust the gap between images */
-  padding: 20px;
-}
-
-.photo__title img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-  border-radius: 8px; /* Optional: Add some border radius for styling */
 }
 
 .photo__cards {
