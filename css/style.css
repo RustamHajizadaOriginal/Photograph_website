@@ -173,6 +173,24 @@ img {
 .contact-info {
   display: block;
 }
+/* Header */
+.lasko_header {
+  margin: 15px;
+  padding: 15px;
+  border: 15px;
+  text-align: center;
+}
+
+.lasko_header__title {
+  margin: 15px;
+  padding: 15px;
+  border: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  top: 50px; /* Adjust this value to move the title lower */
+}
+
 /* Pricing */
 .pricing {
   background: var(--tertiary-color);
