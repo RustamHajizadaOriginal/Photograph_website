@@ -436,6 +436,10 @@ img {
   .photo__title img {
     width: 100%; /* Full width on small screens */
   }
+  /* Adjusted for single column on mobile screens */
+  .pricing__cards {
+    flex-direction: column; /* Change to column direction */
+  }
 }
 
 @media (max-width: 480px) {
@@ -444,5 +448,9 @@ img {
   }
   .photo__title {
     grid-template-columns: 1fr; /* One column on small screens */
+  }
+  /* Adjusted for single column on mobile screens */
+  .pricing__cards {
+    flex-direction: column; /* Change to column direction */
   }
 }
