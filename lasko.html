@@ -1,286 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.css"
+      integrity="sha512-DKdRaC0QGJ/kjx0U0TtJNCamKnN4l+wsMdION3GG0WVK6hIoJ1UPHRHeXNiGsXdrmq19JJxgIubb/Z7Og2qJww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./images/favicon.png" />
+    <title>LÁSKA Dominika</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.css"
-    integrity="sha512-DKdRaC0QGJ/kjx0U0TtJNCamKnN4l+wsMdION3GG0WVK6hIoJ1UPHRHeXNiGsXdrmq19JJxgIubb/Z7Og2qJww=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="icon" href="./images/favicon.png" />
-  <title>LÁSKA Dominika</title>
-</head>
-
-<body>
-  <!-- Navbar -->
-  <navbar class="navbar">
-    <div class="navbar__container">
-      <div class="navbar__logo">
-        <img src="./images/logo.png" alt="Dominika's logo" />
-      </div>
-      <div class="navbar__menu">
-        <ul class="navbar__menu-list">
-          <li class="navbar__menu-item">
-            <a href="index.html" class="navbar__menu-link">ÚVOD</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="index.html#portfolio__header" class="navbar__menu-link">PORTFOLIO</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="pricing.html" target="_blank" class="navbar__menu-link">SLUŽBY</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="contact.html" target="_blank" class="navbar__menu-link">KONTAKT</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="https://www.facebook.com/dominika.neuzilova" target="_blank" class="navbar__menu-link--primary">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="https://www.instagram.com/dominikazvrsovic/" target="_blank" class="navbar__menu-link--primary">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Mobile Menu & Hamburger Icon -->
-      <div class="navbar__mobile-menu">
-        <div class="navbar__mobile-menu-toggle">
-          <i class="fas fa-bars fa-2x"></i>
+  <body>
+    <!-- Navbar -->
+    <navbar class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <img src="./images/logo.png" alt="Dominika's logo" />
         </div>
-        <!-- Mobile Menu Items -->
-        <div class="navbar__mobile-menu-items">
-          <ul class="navbar__mobile-menu-list">
-            <li class="navbar__mobile-menu-item">
-              <a href="index.html" class="navbar__mobile-menu-link">ÚVOD</a>
+        <div class="navbar__menu">
+          <ul class="navbar__menu-list">
+            <li class="navbar__menu-item">
+              <a href="index.html" class="navbar__menu-link">ÚVOD</a>
             </li>
-            <li class="navbar__mobile-menu-item">
-              <a href="#portfolio__header" class="navbar__mobile-menu-link">PORTFOLIO</a>
+            <li class="navbar__menu-item">
+              <a href="index.html#portfolio__header" class="navbar__menu-link"
+                >PORTFOLIO</a
+              >
             </li>
-            <li class="navbar__mobile-menu-item">
-              <a href="pricing.html" class="navbar__mobile-menu-link">SLUŽBY</a>
+            <li class="navbar__menu-item">
+              <a href="pricing.html" target="_blank" class="navbar__menu-link"
+                >SLUŽBY</a
+              >
             </li>
-
-            <li class="navbar__mobile-menu-item">
-              <a href="contact.html" target="_blank" class="navbar__mobile-menu-link">KONTAKT</a>
+            <li class="navbar__menu-item">
+              <a href="contact.html" target="_blank" class="navbar__menu-link"
+                >KONTAKT</a
+              >
             </li>
-            <li class="navbar__mobile-menu-item">
-              <a href="https://www.facebook.com/dominika.neuzilova" target="_blank"
-                class="navbar__mobile-menu-link--primary">
+            <li class="navbar__menu-item">
+              <a
+                href="https://www.facebook.com/dominika.neuzilova"
+                target="_blank"
+                class="navbar__menu-link--primary"
+              >
                 <i class="fa-brands fa-facebook"></i>
               </a>
             </li>
-            <li class="navbar__mobile-menu-item">
-              <a href="https://www.instagram.com/dominikazvrsovic/" target="_blank"
-                class="navbar__mobile-menu-link--primary">
+            <li class="navbar__menu-item">
+              <a
+                href="https://www.instagram.com/dominikazvrsovic/"
+                target="_blank"
+                class="navbar__menu-link--primary"
+              >
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
           </ul>
         </div>
-      </div>
-    </div>
-  </navbar>
-  <!-- Header -->
-  <header class="lasko_header">
-    <h1 class="lasko_header__title">LÁSKA</h1>
-  </header>
-  <!-- Photos -->
-  <section class="photos">
-    <div class="photo__header">
-      Tvuj text bude tady jestli chcesh
-      <div class="photo__container">
-        <div class="photo__title">
-          <a href="images/lasko/Foto-03.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-03.jpg"
-              alt="Foto 03"></a>
-          <a href="images/lasko/Foto-031.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-031.jpg"
-              alt="Foto 031"></a>
-          <a href="images/lasko/Foto-021.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-021.jpg"
-              alt="Foto 021"></a>
-          <a href="images/lasko/Foto-047.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-047.jpg"
-              alt="Foto 047"></a>
-          <a href="images/lasko/Foto-063.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-063.jpg"
-              alt="Foto 063"></a>
-          <a href="images/lasko/Foto-065.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-065.jpg"
-              alt="Foto 065"></a>
-          <a href="images/lasko/Foto-068.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-068.jpg"
-              alt="Foto 068"></a>
-          <a href="images/lasko/Foto-071.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-071.jpg"
-              alt="Foto 071"></a>
-          <a href="images/lasko/Foto-083.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-083.jpg"
-              alt="Foto 083"></a>
-          <a href="images/lasko/Foto-093.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-093.jpg"
-              alt="Foto 093"></a>
-          <a href="images/lasko/Foto-101.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-101.jpg"
-              alt="Foto 101"></a>
-          <a href="images/lasko/Foto-102.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-102.jpg"
-              alt="Foto 102"></a>
-          <a href="images/lasko/Foto-103.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-103.jpg"
-              alt="Foto 103"></a>
-          <a href="images/lasko/Foto-104.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-104.jpg"
-              alt="Foto 104"></a>
-          <a href="images/lasko/Foto-105.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-105.jpg"
-              alt="Foto 105"></a>
-          <a href="images/lasko/Foto-108.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-108.jpg"
-              alt="Foto 108"></a>
-          <a href="images/lasko/Foto-110.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-110.jpg"
-              alt="Foto 110"></a>
-          <a href="images/lasko/Foto-112.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-112.jpg"
-              alt="Foto 112"></a>
-          <a href="images/lasko/Foto-129.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-129.jpg"
-              alt="Foto 129"></a>
-          <a href="images/lasko/Foto-130.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-130.jpg"
-              alt="Foto 130"></a>
-          <a href="images/lasko/Foto-135.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-135.jpg"
-              alt="Foto 135"></a>
-          <a href="images/lasko/Foto-139.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-139.jpg"
-              alt="Foto 139"></a>
-          <a href="images/lasko/Foto-141.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-141.jpg"
-              alt="Foto 141"></a>
-          <a href="images/lasko/Foto-142.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-142.jpg"
-              alt="Foto 142"></a>
-          <a href="images/lasko/Foto-176.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-176.jpg"
-              alt="Foto 176"></a>
-          <a href="images/lasko/Foto-181.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-181.jpg"
-              alt="Foto 181"></a>
-          <a href="images/lasko/Foto-186.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-186.jpg"
-              alt="Foto 186"></a>
-          <a href="images/lasko/Foto-187.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-187.jpg"
-              alt="Foto 187"></a>
-          <a href="images/lasko/Foto-188.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-188.jpg"
-              alt="Foto 188"></a>
-          <a href="images/lasko/Foto-191.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-191.jpg"
-              alt="Foto 191"></a>
-          <a href="images/lasko/Foto-194.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-194.jpg"
-              alt="Foto 194"></a>
-          <a href="images/lasko/Foto-197.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-197.jpg"
-              alt="Foto 197"></a>
-          <a href="images/lasko/Foto-201.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-201.jpg"
-              alt="Foto 201"></a>
-          <a href="images/lasko/Foto-202.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-202.jpg"
-              alt="Foto 202"></a>
-          <a href="images/lasko/Foto-207.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-207.jpg"
-              alt="Foto 207"></a>
-          <a href="images/lasko/Foto-210.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-210.jpg"
-              alt="Foto 210"></a>
-          <a href="images/lasko/Foto-211.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-211.jpg"
-              alt="Foto 211"></a>
-          <a href="images/lasko/Foto-214.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-214.jpg"
-              alt="Foto 214"></a>
-          <a href="images/lasko/Foto-215.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-215.jpg"
-              alt="Foto 215"></a>
-          <a href="images/lasko/Foto-217.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-217.jpg"
-              alt="Foto 217"></a>
-          <a href="images/lasko/Foto-225.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-225.jpg"
-              alt="Foto 225"></a>
-          <a href="images/lasko/Foto-233.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-233.jpg"
-              alt="Foto 233"></a>
-          <a href="images/lasko/Foto-26.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-26.jpg"
-              alt="Foto 26"></a>
-          <a href="images/lasko/Foto-262.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-262.jpg"
-              alt="Foto 262"></a>
-          <a href="images/lasko/Foto-28.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-28.jpg"
-              alt="Foto 28"></a>
-          <a href="images/lasko/Foto-287.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-287.jpg"
-              alt="Foto 287"></a>
-          <a href="images/lasko/Foto-290.jpg" data-lightbox="gallery"><img src="images/lasko/Foto-290.jpg"
-              alt="Foto 290"></a>
-          <img src="images/lasko/Foto-292.jpg" alt="Foto">
-          <img src="images/lasko/Foto-294.jpg" alt="Foto">
-          <img src="images/lasko/Foto-301.jpg" alt="Foto">
-          <img src="images/lasko/Foto-33.jpg" alt="Foto">
-          <img src="images/lasko/Foto-341.jpg" alt="Foto">
-          <img src="images/lasko/Foto-51.jpg" alt="Foto">
-          <img src="images/lasko/Foto-59.jpg" alt="Foto">
-        </div>
-      </div>
-  </section>
-  <!-- DELETE -->
-  <section class="Extra">
-    <div class="photo__container container">
-      <h2 class="photo__title">Co je láska</h2>
-      <div class="photo__cards">
-        <!-- Card 1 -->
-        <div class="photo__card">
-          <div class="photo__card-box">
-            <h3 class="photo__card-price">Láska ve fotografii</h3>
-            <div class="photo__card-body"></div>
-            <ul class="photo__card-list">
-              <li class="photo__card-item">
-                <i class="fas fa-check"></i>
-                Láska je jedním z nejkrásnějších a nejdojemnějších témat,
-                které lze zachytit objektivem fotoaparátu.
+        <!-- Mobile Menu & Hamburger Icon -->
+        <div class="navbar__mobile-menu">
+          <div class="navbar__mobile-menu-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <!-- Mobile Menu Items -->
+          <div class="navbar__mobile-menu-items">
+            <ul class="navbar__mobile-menu-list">
+              <li class="navbar__mobile-menu-item">
+                <a href="index.html" class="navbar__mobile-menu-link">ÚVOD</a>
               </li>
-              <li class="photo__card-item">
-                <i class="fas fa-check"></i>
-                Fotografie lásky vyprávějí příběhy plné emocí, něhy a spojení
-                mezi lidmi.
+              <li class="navbar__mobile-menu-item">
+                <a href="#portfolio__header" class="navbar__mobile-menu-link"
+                  >PORTFOLIO</a
+                >
               </li>
-              <li class="photo__card-item">
-                <i class="fas fa-check"></i>
-                Ať už jde o romantické páry, rodinné okamžiky nebo přátelské
-                vztahy, láska na fotografiích přináší radost a inspiraci.
+              <li class="navbar__mobile-menu-item">
+                <a href="pricing.html" class="navbar__mobile-menu-link"
+                  >SLUŽBY</a
+                >
               </li>
-              <li class="photo__card-item">
-                <i class="fas fa-check"></i>
-                Zachyťte tyto vzácné chvíle a uchovejte je navždy
-                prostřednictvím umění fotografie.
+
+              <li class="navbar__mobile-menu-item">
+                <a
+                  href="contact.html"
+                  target="_blank"
+                  class="navbar__mobile-menu-link"
+                  >KONTAKT</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a
+                  href="https://www.facebook.com/dominika.neuzilova"
+                  target="_blank"
+                  class="navbar__mobile-menu-link--primary"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a
+                  href="https://www.instagram.com/dominikazvrsovic/"
+                  target="_blank"
+                  class="navbar__mobile-menu-link--primary"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
               </li>
             </ul>
           </div>
-          <div>
-            <a href="pricing.html" target="_blank" class="photo__card-button btn">
-              Jdeme na to</a>
+        </div>
+      </div>
+    </navbar>
+    <!-- Header -->
+    <header class="lasko_header">
+      <h1 class="lasko_header__title">LÁSKA</h1>
+    </header>
+    <!-- Photos -->
+    <section class="photos">
+      <div class="photo__header">
+        Tvuj text bude tady jestli chcesh
+        <div class="photo__container">
+          <div class="photo__title">
+            <a href="images/lasko/Foto-03.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-03.jpg" alt="Foto 03"
+            /></a>
+            <a href="images/lasko/Foto-031.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-031.jpg" alt="Foto 031"
+            /></a>
+            <a href="images/lasko/Foto-021.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-021.jpg" alt="Foto 021"
+            /></a>
+            <a href="images/lasko/Foto-047.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-047.jpg" alt="Foto 047"
+            /></a>
+            <a href="images/lasko/Foto-063.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-063.jpg" alt="Foto 063"
+            /></a>
+            <a href="images/lasko/Foto-065.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-065.jpg" alt="Foto 065"
+            /></a>
+            <a href="images/lasko/Foto-068.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-068.jpg" alt="Foto 068"
+            /></a>
+            <a href="images/lasko/Foto-071.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-071.jpg" alt="Foto 071"
+            /></a>
+            <a href="images/lasko/Foto-083.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-083.jpg" alt="Foto 083"
+            /></a>
+            <a href="images/lasko/Foto-093.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-093.jpg" alt="Foto 093"
+            /></a>
+            <a href="images/lasko/Foto-101.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-101.jpg" alt="Foto 101"
+            /></a>
+            <a href="images/lasko/Foto-102.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-102.jpg" alt="Foto 102"
+            /></a>
+            <a href="images/lasko/Foto-103.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-103.jpg" alt="Foto 103"
+            /></a>
+            <a href="images/lasko/Foto-104.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-104.jpg" alt="Foto 104"
+            /></a>
+            <a href="images/lasko/Foto-105.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-105.jpg" alt="Foto 105"
+            /></a>
+            <a href="images/lasko/Foto-108.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-108.jpg" alt="Foto 108"
+            /></a>
+            <a href="images/lasko/Foto-110.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-110.jpg" alt="Foto 110"
+            /></a>
+            <a href="images/lasko/Foto-112.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-112.jpg" alt="Foto 112"
+            /></a>
+            <a href="images/lasko/Foto-129.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-129.jpg" alt="Foto 129"
+            /></a>
+            <a href="images/lasko/Foto-130.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-130.jpg" alt="Foto 130"
+            /></a>
+            <a href="images/lasko/Foto-135.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-135.jpg" alt="Foto 135"
+            /></a>
+            <a href="images/lasko/Foto-139.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-139.jpg" alt="Foto 139"
+            /></a>
+            <a href="images/lasko/Foto-141.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-141.jpg" alt="Foto 141"
+            /></a>
+            <a href="images/lasko/Foto-142.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-142.jpg" alt="Foto 142"
+            /></a>
+            <a href="images/lasko/Foto-176.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-176.jpg" alt="Foto 176"
+            /></a>
+            <a href="images/lasko/Foto-181.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-181.jpg" alt="Foto 181"
+            /></a>
+            <a href="images/lasko/Foto-186.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-186.jpg" alt="Foto 186"
+            /></a>
+            <a href="images/lasko/Foto-187.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-187.jpg" alt="Foto 187"
+            /></a>
+            <a href="images/lasko/Foto-188.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-188.jpg" alt="Foto 188"
+            /></a>
+            <a href="images/lasko/Foto-191.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-191.jpg" alt="Foto 191"
+            /></a>
+            <a href="images/lasko/Foto-194.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-194.jpg" alt="Foto 194"
+            /></a>
+            <a href="images/lasko/Foto-197.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-197.jpg" alt="Foto 197"
+            /></a>
+            <a href="images/lasko/Foto-201.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-201.jpg" alt="Foto 201"
+            /></a>
+            <a href="images/lasko/Foto-202.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-202.jpg" alt="Foto 202"
+            /></a>
+            <a href="images/lasko/Foto-207.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-207.jpg" alt="Foto 207"
+            /></a>
+            <a href="images/lasko/Foto-210.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-210.jpg" alt="Foto 210"
+            /></a>
+            <a href="images/lasko/Foto-211.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-211.jpg" alt="Foto 211"
+            /></a>
+            <a href="images/lasko/Foto-214.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-214.jpg" alt="Foto 214"
+            /></a>
+            <a href="images/lasko/Foto-215.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-215.jpg" alt="Foto 215"
+            /></a>
+            <a href="images/lasko/Foto-217.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-217.jpg" alt="Foto 217"
+            /></a>
+            <a href="images/lasko/Foto-225.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-225.jpg" alt="Foto 225"
+            /></a>
+            <a href="images/lasko/Foto-233.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-233.jpg" alt="Foto 233"
+            /></a>
+            <a href="images/lasko/Foto-26.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-26.jpg" alt="Foto 26"
+            /></a>
+            <a href="images/lasko/Foto-262.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-262.jpg" alt="Foto 262"
+            /></a>
+            <a href="images/lasko/Foto-28.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-28.jpg" alt="Foto 28"
+            /></a>
+            <a href="images/lasko/Foto-287.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-287.jpg" alt="Foto 287"
+            /></a>
+            <a href="images/lasko/Foto-290.jpg" data-lightbox="gallery"
+              ><img src="images/lasko/Foto-290.jpg" alt="Foto 290"
+            /></a>
+            <img src="images/lasko/Foto-292.jpg" alt="Foto" />
+            <img src="images/lasko/Foto-294.jpg" alt="Foto" />
+            <img src="images/lasko/Foto-301.jpg" alt="Foto" />
+            <img src="images/lasko/Foto-33.jpg" alt="Foto" />
+            <img src="images/lasko/Foto-341.jpg" alt="Foto" />
+            <img src="images/lasko/Foto-51.jpg" alt="Foto" />
+            <img src="images/lasko/Foto-59.jpg" alt="Foto" />
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__container container">
-      <div class="footer__about">
-        <h4 class="footer__title">DOMINIKA NEUZILOVA</h4>
-        <h5>FOTOGRAFKA</h5>
-        <p class="footer__description">
-          Věnuju se focení lidí. Miluju okamžiky plné emocí a šťastných lidí,
-          jak je vnímám ve své přirozenosti. Věřím na lásku, vždy a všude.
-          Momentálně žiju v Praze, ale ráda za vámi přicestuju kamkoliv.
-        </p>
+    </section>
+    <!-- DELETE -->
+    <section class="Extra">
+      <div class="photo__container container">
+        <h2 class="photo__title">Co je láska</h2>
+        <div class="photo__cards">
+          <!-- Card 1 -->
+          <div class="photo__card">
+            <div class="photo__card-box">
+              <h3 class="photo__card-price">Láska ve fotografii</h3>
+              <div class="photo__card-body"></div>
+              <ul class="photo__card-list">
+                <li class="photo__card-item">
+                  <i class="fas fa-check"></i>
+                  Láska je jedním z nejkrásnějších a nejdojemnějších témat,
+                  které lze zachytit objektivem fotoaparátu.
+                </li>
+                <li class="photo__card-item">
+                  <i class="fas fa-check"></i>
+                  Fotografie lásky vyprávějí příběhy plné emocí, něhy a spojení
+                  mezi lidmi.
+                </li>
+                <li class="photo__card-item">
+                  <i class="fas fa-check"></i>
+                  Ať už jde o romantické páry, rodinné okamžiky nebo přátelské
+                  vztahy, láska na fotografiích přináší radost a inspiraci.
+                </li>
+                <li class="photo__card-item">
+                  <i class="fas fa-check"></i>
+                  Zachyťte tyto vzácné chvíle a uchovejte je navždy
+                  prostřednictvím umění fotografie.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a
+                href="pricing.html"
+                target="_blank"
+                class="photo__card-button btn"
+              >
+                Jdeme na to</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="footer__social">
-        <a href="https://www.facebook.com/dominika.neuzilova" target="_blank" class="footer__social-link">
-          <i class="fa-brands fa-facebook fa-3x"></i>
-        </a>
-        <a href="https://dominikaneuzilova.webnode.cz/" target="_blank" class="footer__social-link">
-          <i class="fa-brands fa-google-drive fa-3x"></i>
-        </a>
-        <a href="https://www.instagram.com/dominikazvrsovic/" target="_blank" class="footer__social-link">
-          <i class="fa-brands fa-instagram fa-3x"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/dominika-neužilová-534630264/" target="_blank" class="footer__social-link">
-          <i class="fa-brands fa-linkedin fa-3x"></i>
-        </a>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__about">
+          <h4 class="footer__title">DOMINIKA NEUZILOVA</h4>
+          <h5>FOTOGRAFKA</h5>
+          <p class="footer__description">
+            Věnuju se focení lidí. Miluju okamžiky plné emocí a šťastných lidí,
+            jak je vnímám ve své přirozenosti. Věřím na lásku, vždy a všude.
+            Momentálně žiju v Praze, ale ráda za vámi přicestuju kamkoliv.
+          </p>
+        </div>
+        <div class="footer__social">
+          <a
+            href="https://www.facebook.com/dominika.neuzilova"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fa-brands fa-facebook fa-3x"></i>
+          </a>
+          <a
+            href="https://dominikaneuzilova.webnode.cz/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fa-brands fa-google-drive fa-3x"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/dominikazvrsovic/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fa-brands fa-instagram fa-3x"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dominika-neužilová-534630264/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fa-brands fa-linkedin fa-3x"></i>
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"
-    integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Script_Linked -->
-  <script src="./js/script.js"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"
+      integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Script_Linked -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
