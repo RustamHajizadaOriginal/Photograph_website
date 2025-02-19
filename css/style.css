@@ -198,7 +198,7 @@ img {
 /* Portfolio Card */
 
 .portfolio__card {
-  background-color: #193cefe1; /* Example background color */
+  background-color: hsla(116, 93%, 50%, 0.882); /* Example background color */
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -298,6 +298,11 @@ img {
 .pricing__card-item i {
   color: var(--primary-color);
   margin-right: 0.5rem;
+}
+/* Extra */
+.Extra {
+  background: lightcoral;
+  padding: 4rem 2rem 6rem;
 }
 /* Photos */
 .photo {
