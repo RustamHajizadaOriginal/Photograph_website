@@ -3,9 +3,15 @@ document.addEventListener('DOMContentLoaded', function
     // Mobile Menu
     const toggleButton = document.querySelector('.navbar__mobile-menu-toggle');
     const mobileMenu = document.querySelector('.navbar__mobile-menu-items');
-    
+    const menuItems = document.querySelectorAll('.navbar__mobile-menu-items a');
+        
     toggleButton.addEventListener('click', function () {
         mobileMenu.classList.toggle('active');
+    });
+    menuItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            mobileMenu.classList.remove('active')
+        });
     });
 });
 // Navigation Background on scroll
