@@ -234,7 +234,7 @@ img {
   gap: 20px; /* Adjust the gap between cards as needed */
 }
 .portfolio__card {
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -299,7 +299,7 @@ img {
 }
 .pricing__title {
   font-size: 2.3rem;
-  margin-bottom: 2rem;
+  margin: 2rem;
   text-transform: uppercase;
   text-align: center;
   background-color: var(--primary-color);
