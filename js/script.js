@@ -20,3 +20,13 @@ window.addEventListener('scroll', function () {
         }
     
 });
+
+// Temporarily disabling all links that open in a new tab
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('a[target="_blank"]');
+    links.forEach(link => {
+      link.setAttribute('data-original-target', '_blank');
+      link.removeAttribute('target');
+    });
+  });
