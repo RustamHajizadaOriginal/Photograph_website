@@ -34,19 +34,20 @@ img {
   max-width: 1100px;
   margin: 0 auto;
 }
-/* 
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
   color: black;
-  background-color: lightgreen; 
+  background-color: lightgreen;
   border: none;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: color 0.4s;
   border-radius: 15px;
+  z-index: 1;
 }
 
 .btn::before {
@@ -60,6 +61,7 @@ img {
   transition: transform 0.4s;
   transform: scaleX(0);
   transform-origin: left;
+  z-index: -1;
 }
 
 .btn:hover::before {
@@ -67,11 +69,10 @@ img {
 }
 
 .btn:hover {
-  color: black; 
-} 
- */
+  color: black;
+}
 
-.btn {
+/* .btn {
   padding: 0.5rem 2rem;
   background-color: var(--primary-color);
   border: 2px solid transparent;
@@ -84,7 +85,7 @@ img {
   background: var(--secondary-color);
   border-color: var(--primary-color);
   color: var(--primary-color);
-}
+} */
 
 /* Navbar */
 .navbar {
