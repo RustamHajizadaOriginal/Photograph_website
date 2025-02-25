@@ -421,6 +421,31 @@ img {
   gap: 1.5rem;
   justify-content: center;
 }
+/* Contact Form */
+.contact-form p {
+  margin-bottom: 5rem;
+}
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  font-family: inherit;
+  font-size: medium;
+  width: 65%;
+  margin: 1.5rem auto;
+  border: 1px solid var(--tertiary-color);
+  padding: 1.2rem 1rem;
+  border-radius: 25px;
+}
+.contact-form textarea {
+  height: 200px;
+}
+.contact-form .btn {
+  display: block;
+  width: 65%;
+  font-size: inherit;
+  font-family: inherit;
+  margin: 5px auto;
+}
 
 /* Media Queries */
 @media (max-width: 992px) {
