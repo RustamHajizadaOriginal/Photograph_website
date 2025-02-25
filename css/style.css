@@ -10,7 +10,7 @@
   --primary-color: #2c3e50; /* Dark Blue */
   --secondary-color: #b2c5c9; /* Medium Gray */
   --tertiary-color: white; /* Color-of-texts */
-  --accent-color: #afe73c; /* Red */
+  --accent-color: #afe73c; /* ::after -effect */
 }
 html,
 body {
@@ -49,6 +49,7 @@ img {
   border-radius: 15px;
   z-index: 1;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .btn::after {
@@ -63,6 +64,7 @@ img {
   transform: scaleX(0);
   transform-origin: left;
   z-index: -1;
+  text-align: center;
 }
 
 .btn:hover::after {
@@ -163,8 +165,8 @@ img {
 }
 /* Hero */
 .hero {
-  /* background: black url(../images/header-background.jpg) center center/cover
-    no-repeat; */
+  background: black url(../images/projekty/mainLogo.jpg) center center/cover
+    no-repeat;
   padding: 11.5rem 2rem 8rem;
 }
 .hero__container {
@@ -274,6 +276,7 @@ img {
   padding: 15px;
   border: 15px;
   text-align: center;
+  background: black;
 }
 
 .main_header__title {
