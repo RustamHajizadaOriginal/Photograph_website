@@ -248,6 +248,7 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.5);
 }
 .portfolio__card-button {
   display: inline-block;
@@ -269,6 +270,7 @@ img {
   height: 100%; /* 50% of the viewport height */
   object-fit: cover; /* Ensures the image covers the area without distortion */
   border-radius: 8px; /* Optional: Add some border radius for styling */
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.6); /* Optional: Add a shadow for depth */
 }
 
 .main_header {
