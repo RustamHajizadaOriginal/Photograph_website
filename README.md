@@ -1,2 +1,4 @@
-https://dominika.pages.dev/
-https://dominika.netlify.app/
+cloudflare.com - https://dominika.pages.dev/
+-------------------------------------
+netlify.com  - https://dominika.netlify.app/
+-------------------------------------
