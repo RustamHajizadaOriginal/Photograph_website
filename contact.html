@@ -25,9 +25,7 @@
     <navbar class="navbar">
       <div class="navbar__container">
         <div class="navbar__logo">
-          <a href="index.html">
-            <img src="./images/logo.png" alt="Dominika's logo" />
-          </a>
+          <img src="./images/logo.png" alt="Dominika's logo" />
         </div>
         <div class="navbar__menu">
           <ul class="navbar__menu-list">
@@ -47,7 +45,7 @@
                 >KONTAKT</a
               >
             </li>
-            <li class="navbar__menu-item">
+            <!-- <li class="navbar__menu-item">
               <a
                 href="https://www.facebook.com/dominika.neuzilova"
                 target="_blank"
@@ -55,7 +53,7 @@
               >
                 <i class="fa-brands fa-facebook"></i>
               </a>
-            </li>
+            </li> -->
             <li class="navbar__menu-item">
               <a
                 href="https://www.instagram.com/dominikaneuzilova/"
@@ -79,7 +77,9 @@
                 <a href="index.html" class="navbar__mobile-menu-link">ÚVOD</a>
               </li>
               <li class="navbar__mobile-menu-item">
-                <a href="#portfolio__header" class="navbar__mobile-menu-link"
+                <a
+                  href="index.html#portfolio__header"
+                  class="navbar__mobile-menu-link"
                   >PORTFOLIO</a
                 >
               </li>
@@ -97,7 +97,7 @@
                   >KONTAKT</a
                 >
               </li>
-              <li class="navbar__mobile-menu-item">
+              <!-- <li class="navbar__mobile-menu-item">
                 <a
                   href="https://www.facebook.com/dominika.neuzilova"
                   target="_blank"
@@ -105,10 +105,10 @@
                 >
                   <i class="fa-brands fa-facebook"></i>
                 </a>
-              </li>
+              </li> -->
               <li class="navbar__mobile-menu-item">
                 <a
-                  href="https://www.instagram.com/dominikazvrsovic/"
+                  href="https://www.instagram.com/dominikaneuzilova/"
                   target="_blank"
                   class="navbar__mobile-menu-link--primary"
                 >
@@ -149,6 +149,18 @@
       </div>
     </header>
     <!-- Form -->
+    <section class="contact-form section">
+      <div class="container-sm">
+        <p></p>
+        <form data-netlify="true">
+          <input type="text" placeholder="Napište vášé jméno" name="name" />
+          <input type="email" placeholder="Napište váš email" name="email" />
+          <textarea name="message" placeholder="Napište vášu zprávu"></textarea>
+          <button type="submit" class="btn">Odeslat zprávu</button>
+        </form>
+      </div>
+    </section>
+
     <!-- <form name="contact" netlify>
       <p>
         <label>Name <input type="text" name="name" /></label>
@@ -188,7 +200,7 @@
             <i class="fa-brands fa-google-drive fa-3x"></i>
           </a>
           <a
-            href="https://www.instagram.com/dominikazvrsovic/"
+            href="https://www.instagram.com/dominikaneuzilova/"
             target="_blank"
             class="footer__social-link"
           >
