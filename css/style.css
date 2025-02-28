@@ -225,10 +225,13 @@ img {
 /* Portfolio Title */
 .portfolio__title {
   text-align: center;
-  margin: 20px;
-  padding-bottom: 15px;
+  margin: 2rem;
+  font-size: 2rem;
+  padding: 15px;
   text-transform: uppercase;
   font-weight: 700;
+  background-color: var(--primary-color);
+  border-radius: 25px;
 }
 
 /* Portfolio Cards */
@@ -424,8 +427,28 @@ img {
   justify-content: center;
 }
 /* Contact Form */
-.contact-form p {
-  margin-bottom: 5rem;
+#contact-form-title {
+  margin: 1.5rem auto;
+  padding: 0.25rem;
+  width: 65%;
+  border-radius: 25px;
+  text-align: center;
+  background: var(--primary-color);
+}
+.contact-form label {
+  display: block;
+  width: 65%;
+  margin: 1rem auto auto;
+  font-family: inherit;
+  font-size: medium;
+  text-align: left;
+  color: var(--primary-color);
+  padding-left: 1rem;
+  /* background: var(--primary-color); */
+  /* border-radius: 25px; */
+  /* font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+} */
 }
 .contact-form input,
 .contact-form textarea {
@@ -441,12 +464,18 @@ img {
 .contact-form textarea {
   height: 200px;
 }
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: var(--accent-color);
+}
 .contact-form .btn {
   display: block;
   width: 65%;
   font-size: inherit;
   font-family: inherit;
   margin: 5px auto;
+  padding: 5px auto;
+  margin-bottom: 2rem;
 }
 
 /* Media Queries */
