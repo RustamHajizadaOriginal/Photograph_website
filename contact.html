@@ -157,12 +157,13 @@
           method="POST"
           aria-labelledby="contact-form-title"
           novalidate
+          onsubmit="return validateForm()"
         >
           <h2 id="contact-form-title">Kontaktujte nás</h2>
-
           <label for="name">Jméno</label>
           <input
             type="text"
+            id="name"
             placeholder="Napište vaše jméno"
             name="name"
             required
@@ -171,6 +172,7 @@
           <label for="email">Email</label>
           <input
             type="email"
+            id="email"
             placeholder="Napište váš email"
             name="email"
             required
@@ -179,6 +181,7 @@
           <label for="message">Zpráva</label>
           <textarea
             name="message"
+            id="message"
             placeholder="Napište vaši zprávu"
             required
             title="Prosím, zadejte Vaši zprávu."
@@ -190,7 +193,12 @@
             value="https://dominika.pages.dev/"
           />
           <!-- Honeypot field to catch bots -->
-          <input type="text" name="website" style="display: none" />
+          <input
+            type="text"
+            name="Pokud je pod tímto rámečkem informace, pak ji napsali roboti, ne lidé."
+            style="display: none"
+          />
+          <input type="hidden" name="_captcha" value="false" />
           <button type="submit" class="btn">Odeslat zprávu</button>
         </form>
       </div>
