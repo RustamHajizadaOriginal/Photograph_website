@@ -27,32 +27,7 @@ window.addEventListener('scroll', function () {
     
 });
 
-// Validaiton of the form requests.
-function validateForm() {
-    const name = document.getElementById('name');
-    const email = document.getElementById('email');
-    const message = document.getElementById('message');
 
-    if (!name.validity.valid) {
-      name.setCustomValidity('Prosím, zadejte Vaše jméno.');
-    } else {
-      name.setCustomValidity('');
-    }
-
-    if (!email.validity.valid) {
-      email.setCustomValidity('Prosím, zadejte platnou e-mailovou adresu.');
-    } else {
-      email.setCustomValidity('');
-    }
-
-    if (!message.validity.valid) {
-      message.setCustomValidity('Prosím, zadejte Vaši zprávu.');
-    } else {
-      message.setCustomValidity('');
-    }
-
-    return name.validity.valid && email.validity.valid && message.validity.valid;
-  }
 
 // Temporarily disabling all links that open in a new tab
     //   document.addEventListener("DOMContentLoaded", function() {
