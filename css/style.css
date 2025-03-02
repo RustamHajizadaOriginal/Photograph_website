@@ -213,6 +213,13 @@ img {
 .hero__button i {
   margin-right: 10px;
 }
+.hero__thankyou {
+  background-color: var(--secondary-color);
+  margin: 3rem auto;
+  border: 3rem;
+  padding: 11rem 11rem 8rem;
+  text-align: center;
+}
 .contact-info {
   display: block;
 }
