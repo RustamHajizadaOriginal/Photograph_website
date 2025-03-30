@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -373,9 +377,9 @@
       </div>
     </footer>
     <!-- Scroll Buttons -->
-    <div id="scrollButtons">
-      <button id="scrollUpBtn" onclick="scrollToTop()">Up</button>
-      <button id="scrollDownBtn" onclick="scrollToBottom()">Down</button>
+    <div id="scrollButtons" aria-label="Page navigation">
+      <button id="scrollUpBtn" aria-label="Scroll to top">↑</button>
+      <button id="scrollDownBtn" aria-label="Scroll to bottom">↓</button>
     </div>
     <!-- Script_Linked -->
     <script
