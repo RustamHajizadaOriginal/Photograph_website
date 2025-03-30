@@ -6,12 +6,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
   toggleButton.addEventListener("click", function () {
     mobileMenu.classList.toggle("active");
+    if (mobileMenu.classList.contains("active")) {
+      scrollUpBtn.style.display = "none";
+      scrollDownBtn.style.display = "none";
+    } else {
+      scrollUpBtn.style.display = "block";
+      scrollDownBtn.style.display = "block";
+    }
   });
   menuItems.forEach(function (item) {
     item.addEventListener("click", function () {
       mobileMenu.classList.remove("active");
+      scrollUpBtn.style.display = "block";
+      scrollDownBtn.style.display = "block";
     });
   });
+
+  // Custom smooth scroll function
+  function smoothScrollTo(targetPosition, duration) {
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const speed = distance / duration; // Calculate speed
+    let startTime = null;
+
+    function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const run = startPosition + speed * timeElapsed;
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      } else {
+        window.scrollTo(0, targetPosition); // Ensure it ends exactly at the target position
+      }
+    }
+
+    requestAnimationFrame(animation);
+  }
 
   // Scroll Buttons
   const scrollUpBtn = document.getElementById("scrollUpBtn");
@@ -21,13 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollDownBtn.style.display = "block";
 
   scrollUpBtn.addEventListener("click", function () {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    smoothScrollTo(0, 3500); // Adjust the duration (2000ms) as needed
   });
 
   scrollDownBtn.addEventListener("click", function () {
-    document.body.scrollTop = document.body.scrollHeight; // For Safari
-    document.documentElement.scrollTop = document.documentElement.scrollHeight; // For Chrome, Firefox, IE and Opera
+    smoothScrollTo(document.body.scrollHeight, 3500); // Adjust the duration (2000ms) as needed
   });
 });
 
@@ -48,10 +77,10 @@ window.addEventListener("scroll", function () {
   }
 
   if (scrollTop > 0 && scrollTop + clientHeight < scrollHeight - 1) {
-    scrollUpBtn.style.display = "block";
-    scrollDownBtn.style.display = "block";
+    scrollUpBtn.classList.add("show");
+    scrollDownBtn.classList.add("show");
   } else {
-    scrollUpBtn.style.display = "none";
-    scrollDownBtn.style.display = "none";
+    scrollUpBtn.classList.remove("show");
+    scrollDownBtn.classList.remove("show");
   }
 });
