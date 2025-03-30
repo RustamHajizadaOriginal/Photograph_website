@@ -52,11 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollDownBtn.style.display = "block";
 
   scrollUpBtn.addEventListener("click", function () {
-    smoothScrollTo(0, 3500); // Adjust the duration (2000ms) as needed
+    smoothScrollTo(0, 1000); // Adjust the duration (2000ms) as needed
   });
 
   scrollDownBtn.addEventListener("click", function () {
-    smoothScrollTo(document.body.scrollHeight, 3500); // Adjust the duration (2000ms) as needed
+    smoothScrollTo(document.body.scrollHeight, 1000); // Adjust the duration (2000ms) as needed
   });
 });
 
