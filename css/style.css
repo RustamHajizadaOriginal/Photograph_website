@@ -494,6 +494,10 @@ img {
   flex-direction: column;
   pointer-events: auto; /* Ensure clicks are registered */
 }
+#scrollUpBtn.show,
+#scrollDownBtn.show {
+  opacity: 1;
+}
 #scrollUpBtn,
 #scrollDownBtn {
   display: none; /* Hidden by default, shown via JS */
