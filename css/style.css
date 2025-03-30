@@ -298,7 +298,7 @@ img {
   text-align: center;
   text-transform: capitalize;
   position: relative;
-  top: 15vh; /* Adjust this value to move the title lower */
+  top: 10vh; /* Adjust this value to move the title lower */
   border-radius: 50px;
   background: var(--primary-color);
 }
@@ -484,7 +484,30 @@ img {
   padding: 5px auto;
   margin-bottom: 2rem;
 }
+#scrollButtons {
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Place the buttons at the bottom */
+  right: 30px; /* Place the buttons 30px from the right */
+  z-index: 99; /* Make sure they do not overlap */
+}
 
+#scrollUpBtn,
+#scrollDownBtn {
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 15px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  margin: 5px; /* Space between buttons */
+}
+
+#scrollUpBtn:hover,
+#scrollDownBtn:hover {
+  background-color: #333; /* Add a dark-grey background on hover */
+}
 /* Media Queries */
 @media (max-width: 992px) {
   /* Hero */
@@ -547,6 +570,16 @@ img {
   .btn {
     padding: 8px 16px;
     font-size: 14px;
+  }
+  #scrollButtons {
+    right: 10px; /* Adjust position for smaller screens */
+    bottom: 10px; /* Adjust position for smaller screens */
+  }
+
+  #scrollUpBtn,
+  #scrollDownBtn {
+    padding: 8px; /* Adjust padding for smaller screens */
+    font-size: 12px; /* Adjust font size for smaller screens */
   }
 }
 
