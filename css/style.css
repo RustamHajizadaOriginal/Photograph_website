@@ -549,13 +549,20 @@ img {
     gap: 3rem;
     max-width: 600px;
   }
+  /* Scroll UP/DOWN Buttons */
   #scrollButtons {
     right: 5vw;
     bottom: 45vh;
   }
+  #scrollUpBtn.show,
+  #scrollDownBtn.show {
+    opacity: 1;
+  }
 
   #scrollUpBtn,
   #scrollDownBtn {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
     padding: 10px;
     font-size: 14px;
     width: 35px;
