@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollUpBtn.style.display = "block";
       scrollDownBtn.style.display = "block";
     }
+    
   });
   menuItems.forEach(function (item) {
     item.addEventListener("click", function () {
