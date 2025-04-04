@@ -1,5 +1,5 @@
-import "./mobileMenu.js";
-import "./smoothScroll.js";
-import "./scrollButtons.js";
-import "./dominikaLogo.js";
-import "./navigationBackground.js";
+import "./components/mobileMenu.js";
+import "./components/smoothScroll.js";
+import "./components/scrollButtons.js";
+import "./components/dominikaLogo.js";
+import "./components/navigationBackground.js";
