@@ -1,3 +1,4 @@
+import {} from "./COMMON.js";
 // Scroll Buttons
 import { smoothScrollTo } from "./smoothScroll.js";
 document.addEventListener("DOMContentLoaded", function () {

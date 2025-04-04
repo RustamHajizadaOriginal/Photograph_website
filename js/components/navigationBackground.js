@@ -1,3 +1,4 @@
+import {} from "./COMMON.js";
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
   const scrollUpBtn = document.getElementById("scrollUpBtn");

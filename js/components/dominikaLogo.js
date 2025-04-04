@@ -1,3 +1,4 @@
+import { dominikaLogoEl } from "./COMMON.js";
 document.addEventListener("DOMContentLoaded", function () {
   const dominikaLogo = document.querySelector(".dominikaLogo");
   dominikaLogo.style.display = "none"; // Hide initially

@@ -1,3 +1,4 @@
+import {} from "./COMMON.js";
 // Mobile Menu
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.querySelector(".navbar__mobile-menu-toggle");
