@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.querySelector(".navbar__mobile-menu-toggle");
   const mobileMenu = document.querySelector(".navbar__mobile-menu-items");
   const menuItems = document.querySelectorAll(".navbar__mobile-menu-items a");
+  const dominikaLogo = document.querySelector(".dominikaLogo");
 
+  dominikaLogo.style.display = "none"; // Hide initially
   toggleButton.addEventListener("click", function () {
     mobileMenu.classList.toggle("active");
     if (mobileMenu.classList.contains("active")) {
@@ -65,6 +67,7 @@ window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
   const scrollUpBtn = document.getElementById("scrollUpBtn");
   const scrollDownBtn = document.getElementById("scrollDownBtn");
+  const dominikaLogo = document.querySelector(".dominikaLogo");
 
   const scrollTop = window.scrollY;
   const scrollHeight = document.documentElement.scrollHeight;
@@ -72,8 +75,10 @@ window.addEventListener("scroll", function () {
 
   if (scrollTop > 0) {
     navbar.classList.add("navbar--scroll");
+    dominikaLogo.style.display = "block"; // Show when scrolling
   } else {
     navbar.classList.remove("navbar--scroll");
+    dominikaLogo.style.display = "none"; // Hide when not scrolling
   }
 
   if (scrollTop > 0 && scrollTop + clientHeight < scrollHeight - 1) {
