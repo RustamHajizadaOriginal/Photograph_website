@@ -1,4 +1,3 @@
-import {} from "./COMMON.js";
 function smoothScrollTo(targetPosition, duration) {
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;

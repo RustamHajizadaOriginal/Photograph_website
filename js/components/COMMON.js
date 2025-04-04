@@ -11,3 +11,6 @@ export const menuItemsEl = document.querySelectorAll(
 export const navbarEl = document.querySelector(".navbar");
 export const scrollUpBtnEl = document.getElementById("scrollUpBtn");
 export const scrollDownBtnEl = document.getElementById("scrollDownBtn");
+export const clientHeightEl = document.documentElement.clientHeight;
+export const scrollHeightEl = document.documentElement.scrollHeight;
+export const scrollTopEl = window.scrollY;

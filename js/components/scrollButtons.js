@@ -1,18 +1,15 @@
-import {} from "./COMMON.js";
+import { scrollUpBtnEl, scrollDownBtnEl } from "./COMMON.js";
 // Scroll Buttons
 import { smoothScrollTo } from "./smoothScroll.js";
 document.addEventListener("DOMContentLoaded", function () {
-  const scrollUpBtn = document.getElementById("scrollUpBtn");
-  const scrollDownBtn = document.getElementById("scrollDownBtn");
+  scrollUpBtnEl.style.display = "block";
+  scrollDownBtnEl.style.display = "block";
 
-  scrollUpBtn.style.display = "block";
-  scrollDownBtn.style.display = "block";
-
-  scrollUpBtn.addEventListener("click", function () {
+  scrollUpBtnEl.addEventListener("click", function () {
     smoothScrollTo(0, 1000); // Adjust the duration (1000ms) as needed
   });
 
-  scrollDownBtn.addEventListener("click", function () {
+  scrollDownBtnEl.addEventListener("click", function () {
     smoothScrollTo(document.body.scrollHeight, 1000); // Adjust the duration (2000ms) as needed
   });
 });
