@@ -249,10 +249,16 @@ img {
   gap: 20px; /* Adjust the gap between cards as needed */
 }
 .portfolio__card {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   padding: 30px;
   border-radius: 18px;
   text-align: center;
+}
+.portfolio__card-title {
+  color: #707a84;
+  font-size: 1.4rem;
+  margin-bottom: 8%;
+  padding: 10px;
 }
 .portfolio__card img {
   max-width: 100%;
