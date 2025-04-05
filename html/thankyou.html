@@ -6,13 +6,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.css"
-      integrity="sha512-DKdRaC0QGJ/kjx0U0TtJNCamKnN4l+wsMdION3GG0WVK6hIoJ1UPHRHeXNiGsXdrmq19JJxgIubb/Z7Og2qJww=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
@@ -23,16 +16,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="./images/favicon.png" />
-    <title>Projekty Dominika</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../images/favicon.png" />
+    <title>Contact Dominika Neuzilova</title>
   </head>
   <body>
     <!-- Navbar -->
     <navbar class="navbar">
       <div class="navbar__container">
         <div class="navbar__logo">
-          <img src="./images/logo.png" alt="Dominika's logo" />
+          <img src="../images/logo.png" alt="Dominika's logo" />
         </div>
         <div class="navbar__menu">
           <ul class="navbar__menu-list">
@@ -53,14 +46,14 @@
               >
             </li>
             <!-- <li class="navbar__menu-item">
-              <a
-                href="https://www.facebook.com/dominika.neuzilova"
-                target="_blank"
-                class="navbar__menu-link--primary"
-              >
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </li> -->
+                <a
+                  href="https://www.facebook.com/dominika.neuzilova"
+                  target="_blank"
+                  class="navbar__menu-link--primary"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li> -->
             <li class="navbar__menu-item">
               <a
                 href="https://www.instagram.com/dominikaneuzilova/"
@@ -105,14 +98,14 @@
                 >
               </li>
               <!-- <li class="navbar__mobile-menu-item">
-                <a
-                  href="https://www.facebook.com/dominika.neuzilova"
-                  target="_blank"
-                  class="navbar__mobile-menu-link--primary"
-                >
-                  <i class="fa-brands fa-facebook"></i>
-                </a>
-              </li> -->
+                  <a
+                    href="https://www.facebook.com/dominika.neuzilova"
+                    target="_blank"
+                    class="navbar__mobile-menu-link--primary"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li> -->
               <li class="navbar__mobile-menu-item">
                 <a
                   href="https://www.instagram.com/dominikaneuzilova/"
@@ -127,34 +120,17 @@
         </div>
       </div>
     </navbar>
-    <!-- Header -->
-    <header class="main_header">
-      <a href="#hero">
-        <h1 class="main_header__title">PROJEKTY</h1>
-      </a>
-    </header>
-    <!-- Photos -->
-    <section class="photos">
-      <header class="photo__header"></header>
-      <div class="photo__title">
-        <a href="images/portrety/image (1).jpg" data-lightbox="gallery">
-          <img src="images/portrety/image (1).jpg" alt="image (1)" />
-        </a>
-        <a href="images/portrety/image (12).jpg" data-lightbox="gallery">
-          <img src="images/portrety/image (12).jpg" alt="image (12)" />
-        </a>
-      </div>
-    </section>
     <!-- Hero -->
-    <header class="hero" id="hero">
+    <header class="hero__thankyou">
       <div class="hero__container container">
         <div class="hero__content">
           <h1 class="hero__title">
-            NECH SE <span class="hero__title--primary">VYFOTIT</span>
+            Děkujeme za Vaši <span class="hero__title--primary"> zprávu!</span>
           </h1>
           <p class="hero__description">
-            Nečekejte na perfektní okamžik, proměňte i ten jakkoli obyčejný na
-            zcela perfektní. Ráda vám s tím pomohu.
+            Obdrželi jsme Vaši zprávu a brzy se Vám ozveme. Mezitím neváhejte
+            prozkoumat naše webové stránky nebo nás sledovat na sociálních
+            sítích pro aktuální informace
           </p>
           <div class="hero__buttons">
             <a href="tel:+420702011903" class="hero__button btn">
@@ -216,25 +192,7 @@
         </div>
       </div>
     </footer>
-
-    <!-- Scroll Buttons -->
-    <div id="scrollButtons" aria-label="Page navigation">
-      <button id="scrollUpBtn" aria-label="Scroll to top">↑</button>
-      <button id="scrollDownBtn" aria-label="Scroll to bottom">↓</button>
-    </div>
     <!-- Script_Linked -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"
-      integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/main.js" type="module"></script>
   </body>
 </html>

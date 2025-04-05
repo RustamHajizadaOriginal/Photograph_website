@@ -16,18 +16,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="./images/favicon.png" />
-    <title>Dominika Neuzilova</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="icon" href="../images/favicon.png" />
+    <title>Contact Dominika Neuzilova</title>
   </head>
   <body>
     <!-- Navbar -->
     <navbar class="navbar">
       <div class="navbar__container">
         <div class="navbar__logo">
-          <a href="index.html">
-            <img src="./images/logo.png" alt="Dominika's logo" />
-          </a>
+          <img src="../images/logo.png" alt="Dominika's logo" />
         </div>
         <div class="navbar__menu">
           <ul class="navbar__menu-list">
@@ -79,7 +77,9 @@
                 <a href="index.html" class="navbar__mobile-menu-link">ÚVOD</a>
               </li>
               <li class="navbar__mobile-menu-item">
-                <a href="#portfolio__header" class="navbar__mobile-menu-link"
+                <a
+                  href="index.html#portfolio__header"
+                  class="navbar__mobile-menu-link"
                   >PORTFOLIO</a
                 >
               </li>
@@ -120,61 +120,7 @@
         </div>
       </div>
     </navbar>
-    <!-- Main_Foto -->
-    <div class="main__photo">
-      <a href="index.html#portfolio__header">
-        <img src="images/download-background.jpg" alt="background_image" />
-      </a>
-    </div>
-    <!-- Portfolio -->
-    <div class="portfolio__header">
-      <section class="portfolio">
-        <a href="index.html#portfolio__cards">
-          <h2 class="portfolio__title" id="portfolio__header">Portfolio</h2>
-        </a>
-        <div class="portfolio__cards">
-          <!-- Card 1 -->
-          <div class="portfolio__card" id="portfolio__cards">
-            <h4 class="portfolio__card-title">LÁSKA</h4>
-            <a href="portfolio_lasko.html" target="">
-              <img src="images/lasko/Foto-065.jpg" alt="LÁSKA" />
-            </a>
-            <a
-              href="portfolio_lasko.html"
-              target=""
-              class="portfolio__card-button btn"
-              >Více fotografií</a
-            >
-          </div>
-          <!-- Card 2 -->
-          <div class="portfolio__card">
-            <h4 class="portfolio__card-title">PORTRETY</h4>
-            <a href="portfolio_portrety.html" target="">
-              <img src="images/portrety_foto.jpg" alt="PORTRETY" />
-            </a>
-            <a
-              href="portfolio_portrety.html"
-              target=""
-              class="portfolio__card-button btn"
-              >Více fotografií</a
-            >
-          </div>
-          <!-- Card 3 -->
-          <div class="portfolio__card">
-            <h4 class="portfolio__card-title">PROJEKTY</h4>
-            <a href="portfolio_projekty.html" target="">
-              <img src="images/projekty/mainLogo.jpg" alt="PROJEKTY" />
-            </a>
-            <a
-              href="portfolio_projekty.html"
-              target=""
-              class="portfolio__card-button btn"
-              >Více fotografií</a
-            >
-          </div>
-        </div>
-      </section>
-    </div>
+
     <!-- Hero -->
     <header class="hero">
       <div class="hero__container container">
@@ -202,107 +148,59 @@
         </div>
       </div>
     </header>
-    <!-- Pricing -->
-    <section class="pricing" id="pricing">
-      <div class="pricing__container container">
-        <h2 class="pricing__title">SLUŽBY a Ceník</h2>
-        <div class="pricing__cards">
-          <!-- Card 1 -->
-          <div class="pricing__card">
-            <div class="pricing__card-box">
-              <h4 class="pricing__card-title">Svatby</h4>
-              <h3 class="pricing__card-price">od 7,900</h3>
-              <ul class="pricing__card-list">
-                <li class="pricing__card-item">
-                  <i class="fas fa-check"></i>
-                  BASIC
-                </li>
-                <li class="pricing__card-item">
-                  <i class="fas fa-check"></i>
-                  ADVANCED
-                </li>
-                <li class="pricing__card-item">
-                  <i class="fas fa-check"></i>
-                  PRO(VIP)
-                </li>
-              </ul>
-            </div>
-            <div>
-              <a
-                href="sluzby_svatby.html"
-                target=""
-                class="pricing__card-button btn"
-                >Získejte více informací</a
-              >
-            </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="pricing__card">
-            <div class="pricing__card-box">
-              <h4 class="pricing__card-title">Párové focení</h4>
-              <h3 class="pricing__card-price">od 2,900</h3>
-              <ul class="pricing__card-list">
-                <li class="pricing__card-item">
-                  <i class="fas fa-check"></i>
-                  V PŘÍRODĚ
-                </li>
-                <li class="pricing__card-item">
-                  <i class="fas fa-check"></i>
-                  V ATELIÉRU
-                </li>
-                <li class="pricing__card-item">
-                  <i class="fas fa-check"></i>
-                  PROCHÁZKA MĚSTEM
-                </li>
-              </ul>
-            </div>
-            <div>
-              <a
-                href="sluzby_paroveFoceni.html"
-                target=""
-                class="pricing__card-button btn"
-                >Získejte více informací</a
-              >
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="pricing__card">
-            <div class="pricing__card-box">
-              <h4 class="pricing__card-title">Portréty</h4>
-              <h3 class="pricing__card-price">od 2,490</h3>
-              <div class="pricing__card-body"></div>
-              <ul class="pricing__card-list">
-                <li class="pricing__card-item">
-                  <i class="fas fa-check"></i>
-                  PORTRÉT
-                </li>
-                <li class="pricing__card-item">
-                  <i class="fas fa-check"></i>
-                  RODINNÝ PORTRÉT
-                </li>
-                <li class="pricing__card-item">
-                  <i class="fas fa-check"></i>
-                  TĚHOTENSKÝ PORTRÉT
-                </li>
-              </ul>
-            </div>
-            <div>
-              <a href="sluzby_portrety.html" class="pricing__card-button btn"
-                >Získejte více informací</a
-              >
-            </div>
-          </div>
-        </div>
+    <!-- Form -->
+    <section class="contact-form section">
+      <div class="container-sm">
+        <p></p>
+        <form
+          action="https://formsubmit.co/2b581563ef88455e40181d579684d472"
+          method="POST"
+          aria-labelledby="contact-form-title"
+        >
+          <h2 id="contact-form-title">Kontaktujte nás</h2>
+          <label for="name">Jméno</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Napište vaše jméno"
+            name="name"
+            required
+            title="Prosím, zadejte Vaše jméno"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Napište váš email"
+            name="email"
+            required
+            title="Prosím, zadejte platnou e-mailovou adresu."
+          />
+          <label for="message">Zpráva</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Napište vaši zprávu"
+            required
+            title="Prosím, zadejte Vaši zprávu."
+          ></textarea>
+          <input type="hidden" name="_template" value="box" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://dominika.pages.dev/thankyou"
+          />
+          <!-- Honeypot field to catch bots -->
+          <input
+            type="text"
+            name="Pokud je pod tímto rámečkem informace, pak ji napsali roboti, ne lidé."
+            style="display: none"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <button type="submit" class="btn">Odeslat zprávu</button>
+        </form>
       </div>
     </section>
-    <!-- Location -->
-    <!-- <iframe
-      style="border: none"
-      src="https://en.frame.mapy.cz/s/remazenuno"
-      width="500"
-      height="333"
-      frameborder="0"
-    ></iframe> -->
     <!-- Footer -->
     <footer class="footer">
       <div class="footer__container container">
@@ -317,8 +215,7 @@
         </div>
         <div class="footer__social">
           <a
-            href="https://www.facebook.com/dominika.neuzilova
-            https://www.instagram.com/dominikaneuzilova/"
+            href="https://www.facebook.com/dominika.neuzilova"
             target="_blank"
             class="footer__social-link"
           >
@@ -349,6 +246,6 @@
       </div>
     </footer>
     <!-- Script_Linked -->
-    <script src="./js/script.js"></script>
+    <script src="../js/main.js" type="module"></script>
   </body>
 </html>
